@@ -1,0 +1,58 @@
+nav{
+    border: 2px solid #eeeeee
+}
+nav a{
+    text-decoration: none;
+    color: #000;
+    border: 2px solid rgb(96 139 168);
+    border-radius: 5px;
+    background-color: rgb(96 139 168 0.2);
+    padding: 10px;
+    display: block;
+}
+nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 8px;
+}
+/* 
+    flex auto has the same growth with flex 1 
+    list item 3 is not longer
+*/
+/*
+nav li{
+    flex: auto;
+}
+*/
+.push-right{
+    margin-left: auto;
+}
+body{
+    font-family: sans-serif;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 10px;
+}
+.card{
+    border: 2px solid rgb(96 139 168);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+/*
+    changing the flex auto to flex 1 doesn't change it
+    but removing the flex will move the footer up.
+    
+*/
+.card .content{
+    padding: 10px;
+    flex: 1 1 auto;
+}
+.card footer{
+    background-color: rgb(96 139 168 0.2);
+    padding: 10px;
+}
